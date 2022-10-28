@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0px;
+  transition: 0.3s ease-in-out;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#tsheader {
+  padding: 0;
+  margin: 0;
+  background: url(../img/bgheader1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 660px;
+  width: 100vw;
+}
+#tsheader #colorfaded {
+  margin: 0;
+  padding: 15px;
+  height: 180px;
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 1%));
+}
+/* top */
+#tsheader .top {
+  display: block;
+  margin: 0 20px;
+
+  height: 80px;
+}
+#tsheader .top img {
+  float: left;
+  width: 50px;
+}
+#tsheader .top .btnlogin {
+  float: right;
+  text-transform: uppercase;
+  color: #a8afbd;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  width: 70px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0%);
+  border: none;
+  font-size: 13px;
+}
+#tsheader .top .btnlogin:hover {
+  color: white;
+  background-color: #323843;
+}
+.top i {
+  color: aliceblue;
+  font-size: 60%;
+}
+.dropdown {
+  position: relative;
+  display: none;
+  float: right;
+}
+.tsdropbtn {
+  cursor: pointer;
+  padding: 9px 13px;
+  border-radius: 5px;
+  background-color: #323843;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #323843;
+  min-width: 180px;
+  z-index: 1;
+  margin-top: 10px;
+  right: -10px;
+  border-radius: 5px;
+}
+#tsheader .dropdown-content button {
+  display: block;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 3px 4px;
+  border: none;
+}
+#tsheader .dropdown-content .btn1 {
+  color: #a8afbd;
+  background-color: #323843;
+}
+#tsheader .dropdown-content .btn1:hover {
+  background-color: #a8afbd;
+  color: #323843;
+}
+#tsheader .dropdown-content .btn2 {
+  background-color: #0b0c0f;
+  color: #f1f1f1;
+}
+.showgrid {
+  display: grid;
+}
+.showblock {
+  display: block;
+}
+.shownone {
+  display: none;
+}
+/* content*/
+#tsheader .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  text-align: center;
+}
+#tsheader .content img {
+  width: min(100% - 90px, 430px);
+  margin-top: 20px;
+}
+.content h5 {
+  color: #1ce783;
+  font-size: x-small;
+  font-weight: 500;
+}
+.content .p3 {
+  width: min(100% - 80px, 490px);
+  margin-top: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: large;
+  padding: 0;
+}
+.content .p4 a {
+  text-decoration: none;
+  color: black;
+}
+.content .p4 {
+  width: min(100% - 60px, 470px);
+  background-color: #1ce783;
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 650;
+  height: 35px;
+  margin-top: 20px;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+
+.content .p4:hover {
+  background-color: rgba(28, 231, 131, 50%);
+}
+.content .p5 {
+  padding-top: 10px;
+}
+.content .p5 .line1 {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.content .p5 .line1p2 {
+  text-decoration: none;
+}
+.content .p5 span {
+  font-size: 8px;
+  color: #ffffff99;
+}
+.content .p5 span a {
+  color: #ffffff99;
+}
+.content .p5 > a {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+/*phần phụ*/
+#tsmodalbox {
+  margin: 0;
+  padding: 0;
+}
+
+#tsmodalbox .tsmodal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+#tsmodalbox .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+#tsmodalbox .close {
+  color: #aaaaaa;
+  background-color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+}
+
+#tsmodalbox .close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Hulu footer */
+#tsfooter {
+  width: 100vw;
+
+  background-color: #ebedf2;
+  color: #586174;
+}
+#wrapperfooter {
+  margin: auto;
+  max-width: 80vw;
+  min-width: 65vw;
+  padding: 20px 0;
+}
+#footersitelink {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+#footersitelink #browse {
+  margin: 20px 20px;
+}
+#footersitelink #browsefea {
+  display: flex;
+}
+#footersitelink #browsefea .gridcol {
+  width: max(40% - 1px, 100px);
+}
+#footersitelink #helpaboutus {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 10px;
+  max-width: 100%;
+}
+#footersitelink #helpaboutus .gridcol2 {
+  width: 150px;
+}
+#footersitelink hr {
+  height: 2px;
+  width: 100%;
+  background-color: #aaaaaa;
+  margin: 20px 0;
+}
+.helpaboutus {
+  width: 50%;
+  max-width: 250px;
+}
+#footerlegallink .icon i {
+  margin: 10px;
+  cursor: pointer;
+}
+.legallink {
+  display: flex;
+  flex-wrap: wrap;
+}
+.legallink > div {
+  margin-top: 7px;
+  margin-right: 14px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.legallink img {
+  height: 60%;
+}
+.legallink div div {
+  display: inline-block;
+}
+.aboutus {
+  cursor: pointer;
+}
+
+/* Responsive*/
+@media screen and (max-width: 1600px) {
+}
+@media screen and (max-width: 800px) {
+  #tsheader .dropdown {
+    display: block;
+  }
+  #tsheader .btnlogin {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  #tsheader {
+    background: url(../img/bgheader.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #tsmodalbox .modal-content {
+    width: 100%;
+    margin: 0 0;
+  }
+  #tsmodalbox .tsmodal {
+    padding-top: 0;
+  }
+}
